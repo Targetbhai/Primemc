@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#12051f">
+  <title>PrimeMC — Minecraft Server</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="page-glow"></div>
+
+  <header class="navbar">
+    <a class="brand" href="#">
+      <img src="assets/primemc-logo.png" alt="PrimeMC logo">
+      <span>PRIMEMC</span>
+    </a>
+
+    <nav id="siteNav">
+      <a class="active" href="#home">Home</a>
+      <a href="#features">Features</a>
+      <a href="#ranks">Ranks</a>
+      <a href="store.html">Store</a>
+      <a href="#community">Community</a>
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> MINECRAFT SURVIVAL NETWORK</p>
+        <h1>ENTER THE<br><strong>PRIME</strong> WORLD.</h1>
+        <p class="subtitle">
+          Build. Fight. Explore. Create your legacy on PrimeMC.
+          A Minecraft server built for players who want more.
+        </p>
+
+        <div class="hero-actions">
+          <a class="primary-button" href="#play">PLAY NOW <span>→</span></a>
+          <a class="secondary-button" href="#features">EXPLORE</a>
+        </div>
+
+        <div class="server-chip" id="play">
+          <div class="status-dot"></div>
+          <div>
+            <small>SERVER IP</small>
+            <strong>play.primemc.space</strong>
+          </div>
+          <button id="copyIp" aria-label="Copy server IP">COPY</button>
+        </div>
+        <p class="copy-message" id="copyMessage"></p>
+      </div>
+
+      <div class="hero-logo">
+        <div class="logo-ring"></div>
+        <img src="assets/primemc-logo.png" alt="PrimeMC">
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="section-heading">
+        <p class="eyebrow"><span></span> WHY PRIMEMC</p>
+        <h2>BUILT FOR THE <strong>GRIND.</strong></h2>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="icon">⚔</div>
+          <h3>EPIC GAMEPLAY</h3>
+          <p>Competitive gameplay, progression and events designed to keep the server active.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="icon">◆</div>
+          <h3>UNIQUE WORLD</h3>
+          <p>Explore a world packed with places to build, battle and make your own story.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="icon">✦</div>
+          <h3>ACTIVE COMMUNITY</h3>
+          <p>Meet other players, join events and become part of the PrimeMC community.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="ranks" id="ranks">
+      <div class="section-heading">
+        <p class="eyebrow"><span></span> SERVER STORE</p>
+        <h2>CHOOSE YOUR <strong>RANK.</strong></h2>
+      </div>
+
+      <div class="rank-grid">
+        <article class="rank-card" data-rank="hero">
+          <div class="rank-top">
+            <h3>HERO</h3>
+            <div class="rank-price">₹59</div>
+          </div>
+          <ul class="rank-perks">
+            <li>Hero prefix &amp; colored name</li>
+            <li>Exclusive /hero kit</li>
+            <li>2 homes · /kit hero</li>
+            <li>Access to /hat &amp; /nick</li>
+          </ul>
+          <a class="rank-button" href="checkout.html?rank=hero&price=59&color=hero">PURCHASE</a>
+        </article>
+
+        <article class="rank-card" data-rank="mythic">
+          <div class="rank-top">
+            <h3>MYTHIC</h3>
+            <div class="rank-price">₹99</div>
+          </div>
+          <ul class="rank-perks">
+            <li>All HERO perks</li>
+            <li>Mythic prefix &amp; particle trail</li>
+            <li>4 homes · /kit mythic</li>
+            <li>Priority queue access</li>
+          </ul>
+          <a class="rank-button" href="checkout.html?rank=mythic&price=99&color=mythic">PURCHASE</a>
+        </article>
+
+        <article class="rank-card" data-rank="doom">
+          <div class="rank-top">
+            <h3>DOOM</h3>
+            <div class="rank-price">₹199</div>
+          </div>
+          <ul class="rank-perks">
+            <li>All MYTHIC perks</li>
+            <li>Doom prefix &amp; dark aura effect</li>
+            <li>6 homes · /kit doom</li>
+            <li>Exclusive doom-only cosmetics</li>
+          </ul>
+          <a class="rank-button" href="checkout.html?rank=doom&price=199&color=doom">PURCHASE</a>
+        </article>
+
+        <article class="rank-card" data-rank="alpha">
+          <div class="rank-top">
+            <h3>ALPHA</h3>
+            <div class="rank-price">₹299</div>
+          </div>
+          <ul class="rank-perks">
+            <li>All DOOM perks</li>
+            <li>Alpha prefix &amp; wing cosmetic</li>
+            <li>8 homes · /kit alpha</li>
+            <li>Monthly exclusive crate key</li>
+          </ul>
+          <a class="rank-button" href="checkout.html?rank=alpha&price=299&color=alpha">PURCHASE</a>
+        </article>
+
+        <article class="rank-card" data-rank="wild">
+          <div class="rank-top">
+            <h3>WILD</h3>
+            <div class="rank-price">₹399</div>
+          </div>
+          <ul class="rank-perks">
+            <li>All ALPHA perks</li>
+            <li>Wild prefix &amp; animal companion</li>
+            <li>10 homes · /kit wild</li>
+            <li>Early access to new events</li>
+          </ul>
+          <a class="rank-button" href="checkout.html?rank=wild&price=399&color=wild">PURCHASE</a>
+        </article>
+
+        <article class="rank-card rank-featured" data-rank="prime">
+          <div class="rank-badge">BEST VALUE</div>
+          <div class="rank-top">
+            <h3>PRIME</h3>
+            <div class="rank-price">₹499</div>
+          </div>
+          <ul class="rank-perks">
+            <li>All WILD perks</li>
+            <li>Prime prefix &amp; custom particle aura</li>
+            <li>Unlimited homes · /kit prime</li>
+            <li>All future ranks &amp; crates included</li>
+          </ul>
+          <a class="rank-button" href="checkout.html?rank=prime&price=499&color=prime">PURCHASE</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="community" id="community">
+      <div>
+        <p class="eyebrow"><span></span> JOIN THE COMMUNITY</p>
+        <h2>READY TO PLAY?</h2>
+        <p>Connect to the server and start your PrimeMC journey.</p>
+      </div>
+      <a class="primary-button" href="#play">COPY IP <span>→</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand small">
+      <img src="assets/primemc-logo.png" alt="">
+      <span>PRIMEMC</span>
+    </div>
+    <p>© 2026 PrimeMC. All rights reserved.</p>
+  </footer>
+
+  <script src="nav.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

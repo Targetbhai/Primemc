@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#12051f">
+  <title>Store — PrimeMC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="page-glow"></div>
+
+  <header class="navbar">
+    <a class="brand" href="index.html">
+      <img src="assets/primemc-logo.png" alt="PrimeMC logo">
+      <span>PRIMEMC</span>
+    </a>
+
+    <nav id="siteNav">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#ranks">Ranks</a>
+      <a class="active" href="store.html">Store</a>
+      <a href="index.html#community">Community</a>
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="store-header">
+      <p class="eyebrow"><span></span> SERVER STORE</p>
+      <h1>MORE WAYS TO <strong>STAND OUT.</strong></h1>
+      <p class="subtitle">
+        Grab rare items to gear up faster on PrimeMC.
+      </p>
+    </section>
+
+    <section class="store">
+      <div class="store-tabs" id="storeTabs">
+        <button class="store-tab active" data-category="all">ALL</button>
+        <button class="store-tab" data-category="items">ITEMS</button>
+        <button class="store-tab" data-category="keys">KEYS</button>
+        <button class="store-tab" data-category="kits">KITS</button>
+      </div>
+
+      <div class="store-section" data-category="items">
+        <div class="store-subheading">
+          <h2>ITEMS</h2>
+        </div>
+
+        <div class="item-grid item-grid-narrow">
+
+          <article class="item-card" data-item-color="mace">
+            <div class="item-tag">ITEM</div>
+            <h3>Mace</h3>
+            <p>A heavy melee weapon that deals massive damage on a fall attack.</p>
+            <div class="item-bottom">
+              <div class="item-price">₹50</div>
+              <a class="item-button" href="checkout.html?rank=Mace&price=50&color=mace">BUY</a>
+            </div>
+          </article>
+
+          <article class="item-card" data-item-color="elytra">
+            <div class="item-tag">ITEM</div>
+            <h3>Elytra</h3>
+            <p>Wings that let you glide across the map — instant, no crafting needed.</p>
+            <div class="item-bottom">
+              <div class="item-price">₹49</div>
+              <a class="item-button" href="checkout.html?rank=Elytra&price=49&color=elytra">BUY</a>
+            </div>
+          </article>
+
+          <article class="item-card" data-item-color="heavycore">
+            <div class="item-tag">ITEM</div>
+            <h3>Heavy Core</h3>
+            <p>Rare crafting material used to upgrade the Mace's fall damage.</p>
+            <div class="item-bottom">
+              <div class="item-price">₹45</div>
+              <a class="item-button" href="checkout.html?rank=Heavy%20Core&price=45&color=heavycore">BUY</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <div class="store-section" data-category="keys">
+        <div class="store-subheading">
+          <h2>CRATE KEYS</h2>
+        </div>
+
+        <div class="item-grid">
+
+          <article class="item-card" data-item-color="hero">
+            <div class="item-tag">CRATE KEY</div>
+            <h3>Hero Key</h3>
+            <p>Opens the Hero Crate for a chance at basic loot and cosmetics.</p>
+            <div class="item-bottom">
+              <div class="item-price">₹10</div>
+              <a class="item-button" href="checkout.html?rank=Hero%20Key&price=10&color=hero">BUY</a>
+            </div>
+          </article>
+
+          <article class="item-card" data-item-color="mythic">
+            <div class="item-tag">CRATE KEY</div>
+            <h3>Mythic Key</h3>
+            <p>Opens the Mythic Crate — better odds at gear, cosmetics and coins.</p>
+            <div class="item-bottom">
+              <div class="item-price">₹20</div>
+              <a class="item-button" href="checkout.html?rank=Mythic%20Key&price=20&color=mythic">BUY</a>
+            </div>
+          </article>
+
+          <article class="item-card" data-item-color="doom">
+            <div class="item-tag">CRATE KEY</div>
+            <h3>Doom Key</h3>
+            <p>Opens the Doom Crate for higher-tier loot and dark-themed cosmetics.</p>
+            <div class="item-bottom">
+              <div class="item-price">₹35</div>
+              <a class="item-button" href="checkout.html?rank=Doom%20Key&price=35&color=doom">BUY</a>
+            </div>
+          </article>
+
+          <article class="item-card" data-item-color="alpha">
+            <div class="item-tag">CRATE KEY</div>
+            <h3>Alpha Key</h3>
+            <p>Opens the Alpha Crate with rare gear and exclusive cosmetics.</p>
+            <div class="item-bottom">
+              <div class="item-price">₹45</div>
+              <a class="item-button" href="checkout.html?rank=Alpha%20Key&price=45&color=alpha">BUY</a>
+            </div>
+          </article>
+
+          <article class="item-card" data-item-color="wild">
+            <div class="item-tag">CRATE KEY</div>
+            <h3>Wild Key</h3>
+            <p>Opens the Wild Crate for a shot at premium loot and pets.</p>
+            <div class="item-bottom">
+              <div class="item-price">₹69</div>
+              <a class="item-button" href="checkout.html?rank=Wild%20Key&price=69&color=wild">BUY</a>
+            </div>
+          </article>
+
+          <article class="item-card" data-item-color="prime">
+            <div class="item-tag">CRATE KEY</div>
+            <h3>Prime Key</h3>
+            <p>Opens the Prime Crate — the best odds at the rarest items in the game.</p>
+            <div class="item-bottom">
+              <div class="item-price">₹90</div>
+              <a class="item-button" href="checkout.html?rank=Prime%20Key&price=90&color=prime">BUY</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <div class="store-section" data-category="kits">
+        <div class="store-subheading">
+          <h2>KITS</h2>
+        </div>
+
+        <div class="item-grid">
+
+          <article class="item-card" data-item-color="hero">
+            <div class="item-tag">KIT</div>
+            <h3>Hero Kit</h3>
+            <p>Basic gear and supplies to get a Hero-ranked start.</p>
+            <div class="item-bottom">
+              <div class="item-price">₹20</div>
+              <a class="item-button" href="checkout.html?rank=Hero%20Kit&price=20&color=hero">BUY</a>
+            </div>
+          </article>
+
+          <article class="item-card" data-item-color="mythic">
+            <div class="item-tag">KIT</div>
+            <h3>Mythic Kit</h3>
+            <p>Upgraded tools and armor for the Mythic tier.</p>
+            <div class="item-bottom">
+              <div class="item-price">₹30</div>
+              <a class="item-button" href="checkout.html?rank=Mythic%20Kit&price=30&color=mythic">BUY</a>
+            </div>
+          </article>
+
+          <article class="item-card" data-item-color="doom">
+            <div class="item-tag">KIT</div>
+            <h3>Doom Kit</h3>
+            <p>Enchanted weapons and armor built for the Doom tier.</p>
+            <div class="item-bottom">
+              <div class="item-price">₹40</div>
+              <a class="item-button" href="checkout.html?rank=Doom%20Kit&price=40&color=doom">BUY</a>
+            </div>
+          </article>
+
+          <article class="item-card" data-item-color="alpha">
+            <div class="item-tag">KIT</div>
+            <h3>Alpha Kit</h3>
+            <p>High-tier gear and resources for the Alpha tier.</p>
+            <div class="item-bottom">
+              <div class="item-price">₹50</div>
+              <a class="item-button" href="checkout.html?rank=Alpha%20Kit&price=50&color=alpha">BUY</a>
+            </div>
+          </article>
+
+          <article class="item-card" data-item-color="wild">
+            <div class="item-tag">KIT</div>
+            <h3>Wild Kit</h3>
+            <p>Premium gear and consumables for the Wild tier.</p>
+            <div class="item-bottom">
+              <div class="item-price">₹60</div>
+              <a class="item-button" href="checkout.html?rank=Wild%20Kit&price=60&color=wild">BUY</a>
+            </div>
+          </article>
+
+          <article class="item-card" data-item-color="prime">
+            <div class="item-tag">KIT</div>
+            <h3>Prime Kit</h3>
+            <p>The best gear in the game — top-tier armor, tools and resources.</p>
+            <div class="item-bottom">
+              <div class="item-price">₹100</div>
+              <a class="item-button" href="checkout.html?rank=Prime%20Kit&price=100&color=prime">BUY</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand small">
+      <img src="assets/primemc-logo.png" alt="">
+      <span>PRIMEMC</span>
+    </div>
+    <p>© 2026 PrimeMC. All rights reserved.</p>
+  </footer>
+
+  <script src="nav.js"></script>
+  <script src="store.js"></script>
+</body>
+</html>

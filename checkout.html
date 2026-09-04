@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#12051f">
+  <title>Checkout — PrimeMC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="page-glow"></div>
+
+  <header class="navbar">
+    <a class="brand" href="index.html">
+      <img src="assets/primemc-logo.png" alt="PrimeMC logo">
+      <span>PRIMEMC</span>
+    </a>
+
+    <nav id="siteNav">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#ranks">Ranks</a>
+      <a href="store.html">Store</a>
+      <a href="index.html#community">Community</a>
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="checkout">
+      <a class="back-link" href="index.html#ranks">← Back to ranks</a>
+
+      <div class="checkout-panel" id="checkoutPanel">
+        <div class="checkout-info">
+          <p class="eyebrow"><span></span> COMPLETE YOUR PURCHASE</p>
+          <h1 id="rankName">RANK</h1>
+          <div class="checkout-price" id="rankPrice">₹0</div>
+          <p class="checkout-desc">
+            Scan the QR code with your payment app to pay for
+            <strong id="rankNameInline">this item</strong>. Once your payment is confirmed,
+            join our Discord and send your payment receipt to claim your purchase.
+          </p>
+
+          <ul class="checkout-steps">
+            <li>Scan the QR code and complete the payment</li>
+            <li>Screenshot your payment confirmation</li>
+            <li>Open a ticket in our Discord with the screenshot</li>
+            <li>Your purchase will be applied in-game shortly after</li>
+          </ul>
+
+          <a class="primary-button" href="#" id="discordLink">JOIN DISCORD <span>→</span></a>
+        </div>
+
+        <div class="checkout-qr">
+          <div class="qr-frame">
+            <img src="assets/qr-placeholder.png" alt="Payment QR code" id="qrImage">
+          </div>
+          <p class="qr-note">Temporary QR code — will be replaced with the real payment QR.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand small">
+      <img src="assets/primemc-logo.png" alt="">
+      <span>PRIMEMC</span>
+    </div>
+    <p>© 2026 PrimeMC. All rights reserved.</p>
+  </footer>
+
+  <script src="nav.js"></script>
+  <script src="checkout.js"></script>
+</body>
+</html>
